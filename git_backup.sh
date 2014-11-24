@@ -1,11 +1,9 @@
 #!/bin/bash
 
 WORK=1
-#find -size +70M -not -path "./" | grep -q "\." && WORK=0
 find -size +40M -not -path "./" | grep -q "\." && WORK=0
 
 if [ $WORK = 1 ]; then
-
   echo -e '\E[34m'"\033[1m[O  K]40M\033[0m"
 
   if [ ! -d .git/ ]
@@ -14,10 +12,8 @@ if [ $WORK = 1 ]; then
   fi
 
   git add .
-
   MSG=auto'-'`date +%Y%m%d'-'%H%M%S`
   git commit -m "$MSG"
-
   git push
 
   work="[O  K] ".$(pwd)

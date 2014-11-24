@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUFSIZE	main.c	25;"	d	file:
+MAXOP	main.c	24;"	d	file:
+MAXVAL	main.c	23;"	d	file:
+NUMBER	main.c	26;"	d	file:
+buf	main.c	/^char buf[BUFSIZE];  \/*  buffer for ungetch *\/$/;"	v
+bufp	main.c	/^int bufp = 0;       \/*  next free position in buf *\/$/;"	v
+getch	main.c	/^int getch(void) \/*  get a (possibly pushed-back) character *\/$/;"	f
+getop	main.c	/^int getop(char s[])$/;"	f
+main	main.c	/^int main(int argc, char* argv[])$/;"	f
+pop	main.c	/^double pop(void)$/;"	f
+push	main.c	/^void push(double f)$/;"	f
+sp	main.c	/^int sp = 0;         \/*  next free stack position *\/$/;"	v
+ungetch	main.c	/^void ungetch(int c) \/*  push character back on input *\/$/;"	f
+val	main.c	/^double val[MAXVAL]; \/*  value stack *\/$/;"	v

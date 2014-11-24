@@ -5,9 +5,9 @@ WORK=1
 find -size +30M -not -path "./" | grep -q "\." && WORK=0
 
 if [ $WORK = 1 ]; then
-  echo "1"
+  echo "DO!!"
 else
-  echo "0"
+  echo "NO!!"
 fi
 
 ########################

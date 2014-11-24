@@ -9,6 +9,8 @@ else
   echo "2"
 fi
 
+########################
+
 if [ ! -d .git/ ]
 then
   git init

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WORK=1
-find -size +10M -not -path "./.git*" | grep -q "\." && WORK=0
+find -size +70M -not -path "./.git*" | grep -q "\." && WORK=0
 
 if [ $WORK = 1 ]; then
   echo "1"

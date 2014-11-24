@@ -6,7 +6,7 @@ find -size +70M -not -path "./" | grep -q "\." && WORK=0
 if [ $WORK = 1 ]; then
   echo "1"
 else
-  echo "2"
+  echo "0"
 fi
 
 ########################

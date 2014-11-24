@@ -1,5 +1,13 @@
-
 #!/bin/bash
+
+WORK=1
+find -size +30M -not -path "./.git*" | grep -q "\." && WORK=0
+
+if [ $WORK = 1 ]; then
+  echo "1"
+else
+  echo "2"
+fi
 
 if [ ! -d .git/ ]
 then
